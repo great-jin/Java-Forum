@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.blog.dao.UserDao">
+  <select id="login" resultType="user">
+  select * from tb_user where UName = #{UName} and UPwd=#{UPwd}
+  </select>
+  <insert id="save" parameterType="user">
+  insert into tb_user(UName,UPwd,UGender,UTel,UVocation,UAge,UId) values (#{UName},#{UPwd},#{UGender},#{UTel},#{UVocation},#{UAge},#{UId})
+  </insert>
+  <update id="update" parameterType="user">
+  update tb_user set UName=#{UName}, UPwd=#{UPwd} , UGender=#{UGender}, UTel=#{UTel},UVocation=#{UVocation} ,UAge=#{UAge} where UId=#{UId}
+  </update>
+  </mapper>

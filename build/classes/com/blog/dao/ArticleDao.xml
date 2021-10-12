@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.blog.dao.ArticleDao">
+  <select id="display" resultType="article">
+  select * from tb_article where ACategory = #{ACategory}
+  </select>
+  <insert id="save" parameterType="article">
+  insert into tb_article(AAuthor,ACategory,ATime,AHead,AContent,AID,AUId,AIsOrigin)  values (#{AAuthor},#{ACategory},#{ATime},#{AHead},#{AContent},#{AID},#{AUId},#{AIsOrigin})
+  </insert>
+  </mapper>

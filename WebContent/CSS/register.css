@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	outline:none;
+	border:0;
+}
+	
+body{
+	font-size:16px; 
+	font-family:"微软雅黑";
+}
+	
+.info{
+	width:600px;
+	margin:100px auto;
+	border:1px solid #145EA7;
+}
+
+table{
+	width:400px;
+	margin:10px auto;
+	border-collapse: collapse;
+}
+
+tr{
+	border-bottom: 1px solid #499BE8;
+}
+
+.bian{
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:10px;
+	font-weight:600;
+}
+
+input{
+	background:#A8D1FF;
+}
+
+select{
+	background:#A8D1FF;
+}
+	
+.handin{
+	width:400px;
+	margin:10px auto;
+}
+
+.bt{
+	width:90px;
+	height:30px;
+	font-size:16px;
+	font-weight:600;
+	margin-top:20px;
+	margin-left:75px;
+	border:1px solid #061C31;
+	background:#9EC7FB;
+}
